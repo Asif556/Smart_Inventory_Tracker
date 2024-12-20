@@ -49,4 +49,4 @@ The frontend is built with **React** for an interactive user interface, and the 
 
 1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/your-username/SmartInventoryManagementSystem.git
+   git clone https://github.com/Asif556/Smart_Inventory_Tracker.git
