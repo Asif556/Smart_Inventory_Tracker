@@ -1,0 +1,120 @@
+.retrieve-update-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.retrieve-update-form {
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin: 15px 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+select,
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.update-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #2764eb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.update-btn:hover {
+  background-color: #1e4ea1;
+}
+
+.items-table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+.items-table th,
+.items-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .retrieve-update-form {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .form-group {
+    margin: 10px 0;
+  }
+
+  .update-btn {
+    width: 100%;
+  }
+
+  .items-table {
+    width: 100%;
+  }
+
+  .items-table th, 
+  .items-table td {
+    padding: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .retrieve-update-form {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .form-group {
+    margin: 10px 0;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  select, 
+  input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .update-btn {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .items-table {
+    width: 100%;
+  }
+
+  .items-table th, 
+  .items-table td {
+    padding: 5px;
+    font-size: 14px;
+  }
+}

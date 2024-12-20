@@ -1,0 +1,253 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+    box-sizing: border-box; 
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.Landing-main {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #bbedea;
+    height: 100vh;
+    width: 100%;
+}
+
+.landing-nav-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.landing-logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: black;
+    font-family: sans-serif;
+}
+
+.nav-links-main {
+    list-style: none;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links-main a {
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links-main a:hover {
+    color: #0052ab;
+}
+
+.main-section-writeups {
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 5%; 
+    position: relative;
+    background: linear-gradient(90deg, #bbedea 60%, #ffffff);
+    padding-top: 5rem;
+}
+
+.content-text {
+    max-width: 45%;
+}
+
+.content-text h1 {
+    font-size: 2.2rem;
+    color: black;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.content-text p {
+    font-size: 1.3rem;
+    color: #555;
+    margin-bottom: 30px;
+    margin-top: 2rem;
+    font-family: sans-serif;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    width: 30rem;
+    height: 3.3rem;
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    color: white;
+    background-color: #ff4d4f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #d43d3f;
+}
+
+.background-image-inpng img {
+    max-width: 45%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-left: 30rem; 
+}
+
+
+@media screen and (max-width: 1024px) {
+    .landing-nav-main {
+        padding: 15px 20px;
+    }
+
+    .landing-logo {
+        font-size: 2rem;
+    }
+
+    .nav-links-main a {
+        font-size: 1rem;
+    }
+
+    .main-section-writeups {
+        flex-direction: column;
+        padding: 50px 5%;
+    }
+
+    .content-text {
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .background-image-inpng img {
+        max-width: 80%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .cta-button {
+        width: 100%;
+        max-width: 300px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .landing-nav-main {
+        flex-direction: column;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .landing-logo {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    .nav-links-main {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center; 
+    }
+
+    .nav-links-main a {
+        font-size: 1.1rem;
+        color: black;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s ease;
+    }
+
+    .nav-links-main a:hover {
+        color: #0052ab;
+    }
+
+    .main-section-writeups {
+        flex-direction: column;
+        padding: 40px 5%;
+        text-align: center;
+    }
+
+    .content-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .content-text p {
+        font-size: 1.1rem;
+        margin-top: 1rem;
+    }
+
+    .cta-button {
+        width: 100%;
+        max-width: 250px;
+        margin-top: 20px;
+    }
+
+    .background-image-inpng img {
+        max-width: 70%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .landing-nav-main {
+        padding: 10px;
+    }
+
+    .landing-logo {
+        font-size: 1.5rem;
+    }
+
+    .nav-links-main {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .nav-links-main a {
+        font-size: 1rem;
+    }
+
+    .main-section-writeups {
+        padding: 30px 5%;
+        flex-direction: column;
+    }
+
+    .content-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .content-text p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        width: 100%;
+        max-width: 200px;
+        margin-top: 20px;
+    }
+
+    .background-image-inpng img {
+        max-width: 90%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,165 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(90deg, #bbedea 60%, #ffffff);
+  padding: 20px;
+}
+
+.login-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 15px 20px rgba(147, 51, 234, 0.4);
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  font-size: 14px;
+  color: #555;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.password-container {
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #2764eb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #1e4ea1;
+}
+
+.footer {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.footer a {
+  color: #2764eb;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+#typewriter {
+  font-size: 3rem;
+  color: #2764eb;
+  font-weight: bold;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    padding: 10px;
+  }
+
+  .login-box {
+    padding: 20px;
+    width: 90%;
+  }
+
+  #typewriter {
+    font-size: 2rem;
+  }
+
+  .input-group label {
+    font-size: 12px;
+  }
+
+  .input-group input {
+    font-size: 14px;
+  }
+
+  .login-btn {
+    font-size: 14px;
+  }
+
+  .footer {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  #typewriter {
+    font-size: 1.5rem;
+  }
+
+  .login-box {
+    padding: 15px;
+    width: 100%;
+  }
+
+  .input-group label {
+    font-size: 11px;
+  }
+
+  .input-group input {
+    font-size: 13px;
+  }
+
+  .login-btn {
+    font-size: 14px;
+  }
+
+  .footer {
+    font-size: 12px;
+  }
+
+  .eye-icon {
+    font-size: 20px;
+  }
+}

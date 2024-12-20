@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(90deg, #bbedea 60%, #ffffff);
+  padding: 20px;
+}
+
+#typewriter {
+  font-size: 3rem;
+  color: #2764eb;
+  font-weight: bold;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+span {
+  color: #2764eb;
+  transition: all 0.3s;
+}
+
+span:hover {
+  cursor: pointer;
+}
+
+.signup-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  font-size: 14px;
+  color: #555;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.password-container {
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.signup-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #2764eb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.signup-btn:hover {
+  background-color: #1e4ea1;
+}
+
+.footer {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .signup-container {
+    padding: 10px;
+  }
+
+  .signup-box {
+    padding: 20px;
+    width: 90%;
+  }
+
+  #typewriter {
+    font-size: 2rem;
+  }
+
+  .input-group label {
+    font-size: 12px;
+  }
+
+  .input-group input {
+    font-size: 14px;
+  }
+
+  .signup-btn {
+    font-size: 14px;
+  }
+
+  .footer {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  #typewriter {
+    font-size: 1.5rem;
+  }
+
+  .signup-box {
+    padding: 15px;
+    width: 100%;
+  }
+
+  .input-group label {
+    font-size: 11px;
+  }
+
+  .input-group input {
+    font-size: 13px;
+  }
+
+  .signup-btn {
+    font-size: 14px;
+  }
+
+  .footer {
+    font-size: 12px;
+  }
+
+  .eye-icon {
+    font-size: 20px;
+  }
+}
